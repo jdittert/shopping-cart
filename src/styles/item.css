@@ -1,13 +1,43 @@
 .item-card {
-    background-color: var(--header-background);
-    height: 300px;
-    width: 200px;
+    background-color: white;
+    height: 350px;
+    width: 250px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--icon-color);
 }
 
 .item-name {
     font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.item-img > img {
+    width: 100px;
+    height: auto;
+}
+
+.item-card > div {
+    text-align: center;
+}
+
+
+
+.item-description {
+    font-style: italic;
+}
+
+.item-input > div > input {
+    width: 100%;    
+}
+
+.item-input > div {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
 }
