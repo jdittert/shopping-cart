@@ -1,5 +1,6 @@
 .item-card {
     background-color: white;
+    color: black;
     height: 350px;
     width: 250px;
     display: flex;

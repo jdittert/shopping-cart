@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
-import Home from './home';
-import Store from './store';
+import { Link } from 'react-router-dom';
+import '../styles/header.css';
 
 function Header() {
     return (
@@ -13,11 +12,7 @@ function Header() {
                     <li>Cart</li>
                     <li>Checkout</li>
                 </ul>
-            </nav>
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/store' element={<Store />} />
-            </Routes>
+            </nav>            
         </div>
         
     )

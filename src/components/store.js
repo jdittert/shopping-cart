@@ -7,7 +7,7 @@ function Store() {
     const forSale = catalog; 
     
     return (
-        <div>
+        <div className='store'>
             <h1>Store Content</h1>
             <div className='item-field'>
             {forSale.map((element) => {

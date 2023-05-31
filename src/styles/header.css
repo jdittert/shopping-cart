@@ -1,0 +1,19 @@
+.header {
+    background-color: var(--dark-accent-color);
+    color: white;
+}
+
+.header > nav > ul {
+    display: flex;
+    justify-content: space-evenly;  
+    list-style: none; 
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
