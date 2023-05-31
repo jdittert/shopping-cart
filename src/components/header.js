@@ -10,6 +10,8 @@ function Header() {
                 <ul>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/store'>Store</Link></li>
+                    <li>Cart</li>
+                    <li>Checkout</li>
                 </ul>
             </nav>
             <Routes>

@@ -1,0 +1,13 @@
+.item-card {
+    background-color: var(--header-background);
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.item-name {
+    font-weight: bold;
+}
