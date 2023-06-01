@@ -1,10 +1,28 @@
 import React from 'react';
+import { useState } from 'react';
 import '../styles/item.css';
 
 function Item(props) {
     const {itemName} = props;
     const {price} = props;
-    const {description} = props;    
+    const {description} = props;
+
+    const [quantity, setQuantity] = useState(0);
+
+    const updateQuantity = () => {
+        const amount = document.querySelector('input[id="item-quantity"]');
+        setQuantity(amount.value);
+        amount.value = quantity;
+        console.log(quantity);
+    }
+
+    const incrementQuantity = () => {
+        setQuantity(+quantity + 1);    
+    }
+
+    const decrementQuantity = () => {
+        setQuantity(+quantity - 1);
+    }
 
     return (
         <div className='item-card'>
@@ -24,9 +42,12 @@ function Item(props) {
                 <div>
                     <label htmlFor='item-quantity'>Qty:</label>
                     <input id='item-quantity' 
-                    defaultValue={0}/>
-                    <button>+</button>
-                    <button>-</button>
+                    value={quantity}
+                    onChange={updateQuantity}/>
+                    <button
+                    onClick={incrementQuantity}>+</button>
+                    <button
+                    onClick={decrementQuantity}>-</button>
                 </div>                
             </div>
             <div className='item-add'>
