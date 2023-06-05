@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './home';
 import Store from './store';
 import Cart from './cart';
+import PageNotFound from './pagenotfound';
 
 function Main(props) {
     const {addToCart} = props;
@@ -15,6 +16,7 @@ function Main(props) {
                 addToCart={addToCart}                />} />
                 <Route path='/cart' element={<Cart cart={cart}
                 removeFromCart={removeFromCart}/>} />
+                <Route path='*' element={<PageNotFound />} />
             </Routes>
     )
 }
