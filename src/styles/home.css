@@ -3,5 +3,39 @@
 }
 
 .home-heading > h1 {
-    color: var(--icon-color)
+    color: var(--dark-accent-color);
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-image {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    border: 8px solid var(--icon-color);
+    box-shadow: 2px 2px 2px gray;
+}
+
+.home-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.home-text {
+    font-size: 2rem;
+}
+
+.home-button {
+    background-color: var(--icon-color);
+    color: white;
+    border-radius: 6px;
+    padding: 1.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    box-shadow: 2px 2px 2px gray;
 }

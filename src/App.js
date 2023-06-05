@@ -24,6 +24,7 @@ function App() {
         }        
       }     
     }
+    document.getElementById(`item${item.id}-quantity`).value = 0;
   }
 
   const removeFromCart = (e) => {
@@ -33,6 +34,7 @@ function App() {
     const itemIndex = cart.findIndex(isItem);
     let oldCart = [...cart];
     if (itemIndex > -1) {
+      oldCart[itemIndex].quantity = 0;
       oldCart.splice(itemIndex, 1);
       setCart(oldCart);
     }
