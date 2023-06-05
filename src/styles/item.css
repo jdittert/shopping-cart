@@ -10,6 +10,7 @@
     padding: 1rem;
     border-radius: 8px;
     border-left: 4px solid var(--icon-color);
+    box-shadow: 2px 2px 2px gray;
 }
 
 .item-name {
@@ -26,10 +27,14 @@
     text-align: center;
 }
 
-
-
 .item-description {
     font-style: italic;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .item-input > div > input {
@@ -41,4 +46,11 @@
     gap: 10px;
     width: 100%;
     justify-content: center;
+}
+
+.add-button {
+    background-color: var(--icon-color);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px gray;
 }
